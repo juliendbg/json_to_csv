@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'bundler/setup'
+require 'tempfile'
 require 'json_to_csv'
 
 RSpec.configure do |config|
