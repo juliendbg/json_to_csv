@@ -1,7 +1,7 @@
 # JsonToCsv
 
 A small Ruby lib aiming to convert JSON files composed of arrays of objects (all following the same schema)
-to a CSV file where one line equals one object'.
+to a CSV file where one line equals one object.
 
 This project has been developed as a job interview technical test.
 
