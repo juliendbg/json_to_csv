@@ -1,0 +1,23 @@
+[
+  {
+    "Prénom": "François",
+    "Courrier électronique": "francois@example.com",
+    "Préférences": {
+      "emojis préférés": [
+        "💥",
+        "💫"
+      ],
+      "ネコ": 3.5
+    },
+    "\"Piège\"": "Oui"
+  },
+  {
+    "Prénom": "Maëlle",
+    "Courrier électronique": "maelle@example.com",
+    "Préférences": {
+      "emojis préférés": [],
+      "ネコ": 300
+    },
+    "Attribut supplémentaire": "✔️"
+  }
+]

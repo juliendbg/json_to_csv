@@ -2,7 +2,9 @@
 
 require 'bundler/setup'
 require 'tempfile'
+
 require 'json_to_csv'
+require 'json_to_csv/errors'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

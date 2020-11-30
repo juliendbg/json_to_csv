@@ -13,7 +13,14 @@ module JsonToCsv
 
       def build_list
         result = @source.map do |object|
-          @parser.parse(object).values.first
+          item = @parser.parse(object)
+
+          unless item.keys == ['']
+            raise JsonToCsv::NestedObjectInArrayError,
+                  "Unable to serialize #{@source}, an array contains nested objects."
+          end
+
+          item['']
         end
         result.join(',')
       end

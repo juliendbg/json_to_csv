@@ -5,7 +5,6 @@ require 'json_to_csv/parser'
 require 'json_to_csv/exporter'
 
 module JsonToCsv
-  class Error < StandardError; end
 
   def self.convert(input_path, output_path)
     f = File.open(input_path)

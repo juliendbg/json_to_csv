@@ -13,7 +13,7 @@ module JsonToCsv
 
       def serialize
         unless @source.is_a?(Numeric) || @source.is_a?(String)
-          raise JsonToCsv::Error, "Unable to parse #{@source.inspect}, not a scalar value."
+          raise JsonToCsv::UnsupportedTypeError, "Unable to parse #{@source.inspect}, not a scalar value."
         end
 
         @source.to_s
