@@ -6,4 +6,12 @@ require 'json_to_csv/exporter'
 
 module JsonToCsv
   class Error < StandardError; end
+
+  def self.convert(input_path, output_path)
+    f = File.open(input_path)
+    tree = JsonToCsv::Parser.new(f.read).parse
+    f.close
+
+    JsonToCsv::Exporter.new(tree).export(output_path)
+  end
 end

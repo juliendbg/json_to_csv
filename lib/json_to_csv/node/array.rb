@@ -13,7 +13,7 @@ module JsonToCsv
 
       def build_list
         result = @source.map do |object|
-          @parser.parse(object)
+          @parser.parse(object).values.first
         end
         result.join(',')
       end

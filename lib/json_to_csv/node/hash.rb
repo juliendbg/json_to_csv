@@ -8,7 +8,7 @@ module JsonToCsv
       def parse
         @source.map do |k, v|
           @parser.parse(v, path: @path + [k])
-        end.flatten
+        end.flatten.reduce({}, :merge)
       end
     end
   end
