@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module JsonToCsv
   class Error < StandardError; end
 

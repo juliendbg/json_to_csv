@@ -10,7 +10,7 @@ module JsonToCsv
       end
 
       def path
-        @path.map {|component| component.gsub('.', '\.')}.join('.')
+        @path.map { |component| component.gsub('.', '\.') }.join('.')
       end
 
       def parse

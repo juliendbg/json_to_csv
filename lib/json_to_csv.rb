@@ -5,7 +5,6 @@ require 'json_to_csv/parser'
 require 'json_to_csv/exporter'
 
 module JsonToCsv
-
   def self.convert(input_path, output_path)
     f = File.open(input_path)
     tree = JsonToCsv::Parser.new(f.read).parse
